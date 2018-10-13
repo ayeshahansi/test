@@ -89,7 +89,7 @@ public class DataCollectionPointDefinition {
                 .post(prop.getProperty("environment") + "/api/DataCollectionPoint/getdatacollectionpoints").then()
                 .contentType(ContentType.JSON).extract().response();
         //System.out.println("YYYYYYYYYY" +response.toString());
-        System.out.println("YYYYYYYYYY" + response.getBody().asString());
+        System.out.println("YYYYYYYYYY Test Comment " + response.getBody().asString());
         DataCollectionPoint[] restDataArray = response.as(DataCollectionPoint[].class);
 
         Statement stmt = DbConnect.getConnection().createStatement();
