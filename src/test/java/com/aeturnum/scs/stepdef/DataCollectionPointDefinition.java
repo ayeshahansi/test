@@ -140,7 +140,7 @@ public class DataCollectionPointDefinition {
                         + "/api/DataCollectionPoint/getdatacollectionpointdescription")
                 // .get("http://localhost:5000"+"/api/DataCollectionPoint/getdatacollectionpointdescription/410708")
                 .then().contentType("application/json").extract().response();
-        System.out.println("BBBBBBBBBBB");
+        System.out.println("BBBBBBBBBBB Test comment 2");
         LFGDataCollectionPointDescription restDataArray = response.as(LFGDataCollectionPointDescription.class);
 
         System.out.println("CCCCCCCCCCCCCC");
